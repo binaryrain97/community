@@ -24,4 +24,9 @@ public class MemberController {
         memberService.create(userId, password);
         return "redirect:/";
     }
+
+    @GetMapping("/login")
+    public String login() {
+        return "login_form";
+    }
 }
