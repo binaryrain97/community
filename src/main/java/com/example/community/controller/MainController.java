@@ -9,4 +9,19 @@ public class MainController {
     public String root() {
         return "redirect:/board/list";
     }
+
+    @GetMapping("/chart")
+    public String chart() {
+        return "chart";
+    }
+
+    @GetMapping("/stock")
+    public String stock() {
+        return "stock";
+    }
+
+    @GetMapping("/tmp")
+    public String tmp() {
+        return "tmp";
+    }
 }
